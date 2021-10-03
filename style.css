@@ -154,20 +154,27 @@ h1 {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.change-generator {
+.change-page {
+  list-style-type: none;
   display: flex;
   align-items: center;
 }
 
-.change-generator h3 {
+.change-page li {
   font-size: 2rem;
   margin-right: 1rem;
+  font-weight: 600;
 }
 
-.change-generator h3:last-of-type {
+.change-page li:last-of-type {
   margin-right: 7rem;
+}
+
+a {
+  color: inherit;
 }
 
 h2 {

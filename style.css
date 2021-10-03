@@ -167,6 +167,7 @@ h1 {
   font-size: 2rem;
   margin-right: 1rem;
   font-weight: 600;
+  transition: var(--transition);
 }
 
 .change-page li:last-of-type {
@@ -191,4 +192,19 @@ h2 {
 #color-value {
   margin-left: 1rem;
   color: white;
+}
+
+/* mobile version */
+
+@media screen and (max-width: 800px) {
+  .nav {
+    display: block;
+    text-align: center;
+  }
+  .change-page {
+    justify-content: center;
+  }
+  .change-page li:last-of-type {
+    margin: 0;
+  }
 }

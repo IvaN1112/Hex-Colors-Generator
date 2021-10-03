@@ -5,11 +5,16 @@ const colors = ['#BD811A', '#7890A5', '#24E3D1', '#CD67DC', '#A5AA88'];
 const link1 = document.querySelector('.li1');
 const link2 = document.querySelector('.li2');
 
-colorText.innerText = colors[0];
-mainScreen.style.background = colors[0];
+let hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+
+colorText.innerText = colors[2];
+mainScreen.style.background = colors[2];
 
 button.addEventListener('click', function () {
-  let randomColor = colors[Math.floor(Math.random() * 5)];
+  let randomColor = '#';
+  for (let i = 0; i < 6; i++) {
+    randomColor += hexValues[Math.floor(Math.random() * 16)];
+  }
   colorText.innerText = randomColor;
   mainScreen.style.background = randomColor;
 });
